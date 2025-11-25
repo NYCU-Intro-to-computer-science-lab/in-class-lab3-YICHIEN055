@@ -3,8 +3,23 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-    
+long long factorial(int n)
+{
+    if(n==0) return 1;
+    return n*factorial(n-1);
+}
+
+long long sum(int n)
+{
+    return (n*(n+1))/2;
+}
+
+int main()
+ {
+    int n;
+    cin>>n;
+    cout<<factorial(n)<<endl;
+    cout<<sum(n)<<endl;
     
     return 0;
 }
